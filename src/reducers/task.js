@@ -1,24 +1,24 @@
 
 
-const TASKS = [
+const tasks = [
     {
         id: 1,
-        text: 'Learn ReactJS',
+        text: 'Сыр',
         isCompleted: true,
     },
     {
         id: 2,
-        text: 'Learn Redux',
+        text: 'Помидорка',
         isCompleted: false,
     },
     {
         id: 3,
-        text: 'Learn React Router',
+        text: 'Огурец',
         isCompleted: false,
     }
 ];
 
-const task = (state = TASKS, {id, text, isCompleted, type}) => {
+const task = (state = tasks, {id, text, isCompleted, type}) => {
     switch (type) {
         case 'ADD_TASK' :
             return [
